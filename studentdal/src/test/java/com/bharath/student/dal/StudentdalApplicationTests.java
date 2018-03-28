@@ -36,7 +36,7 @@ public class StudentdalApplicationTests {
 	@Test
 	public void testUpdateStudentById() {
 		Optional<Student> student = studentRepository.findById(1l);
-//		student.setFees(40.00d);
-//		studentRepository.save(student);
+		student.setFees(40.00d);
+		studentRepository.save(student);
 	}
 }
